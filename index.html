@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music play by Ducreal95</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="./css/reset.css"> -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="player">
+        <!-- Dashboard -->
+        <div class="dashboard">
+            <!-- Header -->
+            <header>
+                <h4>Music play</h4>
+                <h2>DucReal 95</h2>
+            </header>
+
+            <!-- CD -->
+            <div class="cd">
+                <div class="cd-thumb"
+                    style="background-image: url('https://i.ytimg.com/vi/jTLhQf5KJSc/maxresdefault.jpg')">
+                </div>
+            </div>
+
+            <!-- Control -->
+            <div class="control">
+                <div class="btn btn-loading">
+                    <i class="fa fa-square"></i>
+                </div>
+                <div class="btn btn-repeat">
+                    <i class="fas fa-redo"  title="Repeat"></i>
+                </div>
+                <div class="btn btn-prev">
+                    <i class="fas fa-step-backward" title="Previous"></i>
+                </div>
+                <div class="btn btn-toggle-play">
+                    <i class="fas fa-pause icon-pause" title="Pause"></i>
+                    <i class="fas fa-play icon-play" title="Play"></i>
+                </div>
+                <div class="btn btn-next">
+                    <i class="fas fa-step-forward" title="Next"></i>
+                </div>
+                <div class="btn btn-random">
+                    <i class="fas fa-random" title="Random"></i>
+                </div>
+                <div class="btn btn-mute">
+                    <i class='fas fa-volume-up' title="Mute"></i>
+                    <i class='fas fa-volume-mute none' title="Unmute"></i>
+                </div>
+            </div>
+            <div class="prog">
+                <input id="progress" class="progress" type="range" value="0" step="1" min="0" max="100">
+                <audio id="audio" src=""></audio>
+            </div>
+            <div class="time__audio">
+                <div class="timeSOng">
+                    <span>0:00</span>
+                </div>
+                
+                <div class="timeAudio">
+                    <span>0:00</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Playlist -->
+
+        <div class="playlist">
+
+        </div>
+    </div>
+</body>
+<script src="./js/main.js"></script>
+
+</html>
